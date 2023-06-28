@@ -1,0 +1,22 @@
+# This is a boilerplate parameters config generated for pipeline 'training_lstm'
+# using Kedro 0.18.10.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.18.10/kedro_project_setup/configuration.html#parameters
+
+
+pytorch_lstm_init_options:
+  input_size: 60
+
+pytorch_lstm_fit_options:
+  hidden_size: 128
+  output_size: 1
+  learning_rate: 0.001
+  num_epochs: 10
+
+pytorch_lstm_save_options:
+  model_save_path: 'data/06_models/lstm_training.pt'
+
+pytorch_lstm_load_options:
+  model_load_path: 'data/06_models/lstm_training.pt'
+
